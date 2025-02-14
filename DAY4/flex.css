@@ -1,0 +1,17 @@
+body{
+    margin:0;
+}
+/* header{
+    nacl
+} */
+nav{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding:10px;
+}
+.link{
+    text-decoration: none;
+    color:white;
+    padding:3px;
+}

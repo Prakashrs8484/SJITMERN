@@ -5,14 +5,14 @@ import Form from "./components/FunctionalComponents/Form"
 import Gallery from "./components/FunctionalComponents/Gallery"
 import Skills from "./components/FunctionalComponents/Skills"
 import {BrowserRouter ,Routes, Route,} from "react-router-dom"
-import UseEffect from "./components/FunctionalComponents/useEffect"
-import UseState from "./components/FunctionalComponents/useState"
+import UseEffect from "./components/FunctionalComponents/UseEffect"
+import UseState from "./components/FunctionalComponents/UseState"
 import Login from "./components/FunctionalComponents/Login"
 import SignUp from "./components/FunctionalComponents/SignUp";
-import UseEffectAPI from "./components/FunctionalComponents/useEffectAPI";
+import UseEffectAPI from "./components/FunctionalComponents/UseEffectAPI";
 import UseRef from "./components/FunctionalComponents/UseRef";
 import Navbar from "./components/FunctionalComponents/Navbar";  
-import UseMemo from "./components/FunctionalComponents/useMemo";
+import UseMemo from "./components/FunctionalComponents/UseMemo";
 function App() {
   return (
       <main>

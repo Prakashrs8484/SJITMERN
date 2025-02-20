@@ -12,7 +12,7 @@ import SignUp from "./components/functionalComponents/SignUp";
 import UseEffectAPI from "./components/functionalComponents/UseEffectAPI";
 import UseRef from "./components/functionalComponents/UseRef";
 import Navbar from "./components/functionalComponents/Navbar";  
-import UseMemo from "./components/functionalComponents/UseMemo";
+import UseMemo from './components/functionalComponents/UseMemo';
 function App() {
   return (
       <main>

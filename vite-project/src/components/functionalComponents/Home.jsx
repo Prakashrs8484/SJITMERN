@@ -1,3 +1,6 @@
+import React from "react";
+
+
 function Home(properties){
   var styling={
       textAlign:"center",

@@ -5,27 +5,34 @@ import Form from "./components/FunctionalComponents/Form"
 import Gallery from "./components/FunctionalComponents/Gallery"
 import Skills from "./components/FunctionalComponents/Skills"
 import Navbar from "./components/FunctionalComponents/Navbar"
-import {BrowserRouter ,Routes, Route,} from "react-router-dom";
-
+import {BrowserRouter ,Routes, Route,} from "react-router-dom"
+import UseEffect from "./components/FunctionalComponents/useEffect"
+import UseState from "./components/FunctionalComponents/useState"
+import Login from "./components/FunctionalComponents/Login"
+import SignUp from "./components/FunctionalComponents/SignUp";
+import UseEffectAPI from "./components/FunctionalComponents/useEffectAPI";
+import UseRef from "./components/FunctionalComponents/UseRef";
+import UseMemo from "./components/FunctionalComponents/useMemo";
 function App() {
   return (
       <main>
         <BrowserRouter>
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} properties="sjit" sjit="Hello" />
             <Route path="/about" element={<About />} />
             <Route path="/form" element={<Form />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/skills" element={<Skills />} />
-            <Route path="/navbar" element={<Navbar />} />
+            <Route path="/UseState" element={<UseState />} />
+            <Route path="/UseEffect" element={<UseEffect />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="use-effect-api" element={<UseEffectAPI/>}></Route>
+            <Route path='/useRef' element={<UseRef/>}></Route>
+            <Route path='/useMemo' element={<UseMemo/>}></Route>
           </Routes>
           </BrowserRouter>
-         <Home properties="sjit" sjit="Hello"></Home><hr></hr>
-         <About></About><hr></hr>
-         <Form></Form><hr></hr>
-         <Gallery></Gallery><hr></hr>
-         <Skills></Skills><hr></hr>
-         <Navbar></Navbar>
       </main>
   )
 }

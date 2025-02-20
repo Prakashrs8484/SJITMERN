@@ -16,7 +16,7 @@ const UseRef = () => {
       Type your Text:{" "}
       <input type="text" ref={textRef} onChange={(e) => setText(e.target.value)} />
       <h2>The current render text is {text}</h2>
-      <h3>The previous render text is {textRef.current.value}</h3>
+      <h3>The previous render text is {textRef.current}</h3>
     </div>
   )
 }

@@ -1,18 +1,18 @@
 import React from "react";
-import About from "./Components/FunctionalComponents/About"
-import Home from "./Components/FunctionalComponents/Home"
-import Form from "./Components/FunctionalComponents/Form"
-import Gallery from "./Components/FunctionalComponents/Gallery"
-import Skills from "./Components/FunctionalComponents/Skills"
+import About from './Components/functionalComponents/About'
+import Home from "./Components/functionalComponents/Home"
+import Form from "./Components/functionalComponents/Form"
+import Gallery from "./Components/functionalComponents/Gallery"
+import Skills from "./Components/functionalComponents/Skills"
 import {BrowserRouter ,Routes, Route,} from "react-router-dom"
-import UseEffect from "./Components/FunctionalComponents/UseEffect"
-import UseState from "./Components/FunctionalComponents/UseState"
-import Login from "./Components/FunctionalComponents/Login"
-import SignUp from "./Components/FunctionalComponents/SignUp";
-import UseEffectAPI from "./Components/FunctionalComponents/UseEffectAPI";
-import UseRef from "./Components/FunctionalComponents/UseRef";
-import Navbar from "./Components/FunctionalComponents/Navbar";  
-import UseMemo from "./Components/FunctionalComponents/UseMemo";
+import UseEffect from "./Components/functionalComponents/UseEffect"
+import UseState from "./Components/functionalComponents/UseState"
+import Login from "./Components/functionalComponents/Login"
+import SignUp from "./Components/functionalComponents/SignUp";
+import UseEffectAPI from "./Components/functionalComponents/UseEffectAPI";
+import UseRef from "./Components/functionalComponents/UseRef";
+import Navbar from "./Components/functionalComponents/Navbar";  
+import UseMemo from "./Components/functionalComponents/UseMemo";
 function App() {
   return (
       <main>

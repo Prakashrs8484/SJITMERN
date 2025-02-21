@@ -11,6 +11,7 @@ const Navbar=()=>{
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/gallery'>Gallery</Link></li>
                 <li><Link to='/skills'>Skill</Link></li>
+                <li><Link to='/hoc'>HoC</Link></li>
                 <li 
                     className="dropDown" 
                     onMouseEnter={() => setDropDown(true)} 
@@ -28,6 +29,8 @@ const Navbar=()=>{
                             <li><Link to='/use-effect-api'>useEffectAPI</Link></li>
                             <li><Link to='/useRef'>useRef</Link></li>
                             <li><Link to='/useMemo'>useMemo</Link></li>
+                            <li><Link to='useCallback'>useCallback</Link></li>
+                            <li><Link to=""></Link></li>
                         </ul>
                     )}
                 </li>

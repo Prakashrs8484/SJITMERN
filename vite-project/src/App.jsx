@@ -5,14 +5,17 @@ import Form from "./components/functionalComponents/Form"
 import Gallery from "./components/functionalComponents/Gallery"
 import Skills from "./components/functionalComponents/Skills"
 import {BrowserRouter ,Routes, Route,} from "react-router-dom"
-import UseEffect from "./components/functionalComponents/UseEffect"
-import UseState from "./components/functionalComponents/UseState"
+import UseEffect from "./components/functionalComponents/Hooks/UseEffect"
+import UseState from "./components/functionalComponents/Hooks/UseState"
 import Login from "./components/functionalComponents/Login"
 import SignUp from "./components/functionalComponents/SignUp";
-import UseEffectAPI from "./components/functionalComponents/UseEffectAPI";
-import UseRef from "./components/functionalComponents/UseRef";
+import UseEffectAPI from "./components/functionalComponents/Hooks/UseEffectAPI";
+import UseRef from "./components/functionalComponents/Hooks/UseRef";
 import Navbar from "./components/functionalComponents/Navbar";  
-import UseMemo from './components/functionalComponents/useMemo';
+import UseMemo from './components/functionalComponents/Hooks/UseMemo';
+import UseCallback from "./components/functionalComponents/Hooks/UseCallback";
+import HoC from "./components/functionalComponents/HoC/HoC";
+
 function App() {
   return (
       <main>
@@ -31,6 +34,9 @@ function App() {
             <Route path="use-effect-api" element={<UseEffectAPI/>}></Route>
             <Route path='/useRef' element={<UseRef/>}></Route>
             <Route path='/useMemo' element={<UseMemo/>}></Route>
+            <Route path='/useCallback' element={<UseCallback/>}></Route>
+            <Route path="/hoc" element={<HoC/>}></Route>
+            <Route path='/'></Route>
           </Routes>
           </BrowserRouter>
       </main>

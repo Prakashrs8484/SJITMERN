@@ -3,6 +3,7 @@ import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
 const Navbar=()=>{
     const [dropDown,setDropDown]=useState(false);
+    var [dropdown1, showDropdown1] = useState(false);
     return(
         <header>
             <nav>
@@ -34,6 +35,36 @@ const Navbar=()=>{
                         </ul>
                     )}
                 </li>
+
+                <li>
+                    <Link to="/hoc" className="link">
+                        HoC
+                    </Link>
+                </li>
+
+                <li 
+                  className="dropdown"
+                  onMouseEnter={() => showDropdown1(!dropdown1)}
+                  onMouseLeave={() => showDropdown1(!dropdown1)}
+                  >
+                     <span className="dropdown-toggle">Memoization</span>
+          
+                        {dropdown1 && (
+                    <ol className="dropdown-menu" >
+                        <li>
+                        <Link to="/memo" className="dropdown-link">
+                            Memo
+                        </Link>
+                        </li>
+                        <li>
+                            <Link to="/lazy" className="dropdown-link">
+                                Lazy Component
+                            </Link>
+                        </li>
+                    </ol>
+                )}
+                </li>
+
                 <li><Link to='/login'>Login</Link></li>
             </nav>
         </header>

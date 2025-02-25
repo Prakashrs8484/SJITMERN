@@ -1,6 +1,7 @@
 const express=require('express');
 const mdb=require("mongoose");
 const dotenv=require("dotenv");
+const bcrypt = require("bcrypt");
 const signup_schema = require('./models/signSchema');
 
 const app=express();
@@ -17,13 +18,14 @@ mdb.connect(process.env.MONGODB_URL)
     console.log("Error connecting to MongoDB",err);
 });
 
-app.post("/signup",(req,res)=>{
+app.post("/signup",async (req,res)=>{
     try{
         const {name,email,password}=req.body;
+        const hashedPassword = await bcrypt.hash(password, 10);
         const newSignup=new signup_schema({
             name,
             email,
-            password
+            password:hashedPassword
         });
         newSignup.save();
         console.log("name,email,password",name,email,password);

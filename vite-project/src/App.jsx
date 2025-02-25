@@ -12,10 +12,10 @@ import SignUp from "./components/functionalComponents/SignUp";
 import UseEffectAPI from "./components/functionalComponents/Hooks/UseEffectAPI";
 import UseRef from "./components/functionalComponents/Hooks/UseRef";
 import Navbar from "./components/functionalComponents/Navbar";  
-import UseMemo from './components/functionalComponents/Hooks/UseMemo';
 import UseCallback from "./components/functionalComponents/Hooks/UseCallback";
 import HoC from "./components/functionalComponents/HoC/HoC";
 import Memo from "./components/functionalComponents/Memoization/Memo";
+import UseMemo from "./components/functionalComponents/Hooks/UseMemo";
 import LazyLoadingAndSuspense from "./components/functionalComponents/Memoization/LazyLoadingAndSuspense";
 
 

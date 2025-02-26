@@ -8,6 +8,7 @@ const Navbar=()=>{
         <header>
             <nav>
                 <li><Link to='/'>Home</Link></li>
+                <li><Link to='/signup'>SignUp</Link></li>
                 <li><Link to='/form'>Form</Link></li>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/gallery'>Gallery</Link></li>

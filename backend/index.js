@@ -77,7 +77,7 @@ app.post("/login",async (req,res)=>{
 });
 
 app.get('/',(req,res)=>{
-    res.sendFile("C:/PRAKASH/SJITMERN/backend/index.html");
+    res.send("Welcome")
 }
 );
 

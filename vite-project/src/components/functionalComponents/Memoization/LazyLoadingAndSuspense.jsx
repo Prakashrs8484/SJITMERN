@@ -1,5 +1,5 @@
 import { Suspense, lazy } from "react";
-const LazyComp = lazy(()=>import ("../Signup"))
+const LazyComp = lazy(()=>import ("../SignUp"))
 
 const LazyLoadingAndSuspense = () => {
   return (

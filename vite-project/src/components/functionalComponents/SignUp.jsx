@@ -23,7 +23,7 @@ const Signup = () => {
 
       navigate("/login")
       console.log(response.data);
-    } catch (error) {5
+    } catch (error) {
       console.error("Signup failed", error);
       alert("Signup failed. Please try again.");
     }

@@ -10,11 +10,7 @@ const app=express();
 app.use(express.json());
 const port=process.env.PORT || 3000;
 dotenv.config();
-app.use(cors({
-    origin: "http://localhost:5173", // Allow requests from frontend
-    methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
-    credentials: true // Allow cookies if needed
-  }));
+app.use(cors());
   
 
 console.log(process.env.MONGODB_URL);
